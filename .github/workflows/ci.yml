@@ -24,3 +24,6 @@ jobs:
 
       - run: npm install
       - run: npm run test
+
+      - name: Build docker image
+        run: docker build -t pipelines-ci-api:latest .
